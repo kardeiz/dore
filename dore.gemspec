@@ -7,11 +7,11 @@ require "dore/version"
 Gem::Specification.new do |s|
   s.name        = "dore"
   s.version     = Dore::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Dore."
-  s.description = "TODO: Description of Dore."
+  s.authors     = ["Jacob Brown"]
+  s.email       = ["kardeiz@gmail.com"]
+  s.homepage    = "https://github.com/kardeiz/dore"
+  s.summary     = "Summary of Dore."
+  s.description = "Description of Dore."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
