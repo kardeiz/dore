@@ -1,0 +1,59 @@
+@import "//fonts.googleapis.com/css?family=Open+Sans";
+
+$font-family-sans-serif: "Open Sans", sans-serif;
+$tcu-purple: #4d1979;
+$white: white;
+
+@import 'bootstrap';
+
+.dore-navbar {
+  background-color: $tcu-purple;
+  margin-bottom: 20px;
+ 
+  .navbar-brand, .navbar-nav > li > a {
+    text-shadow: none;
+    color: $white;
+  }
+  
+  .navbar-brand .glyphicon {
+    vertical-align: top;
+  }
+  
+  .navbar-nav > li > a:focus {
+    background-color: $tcu-purple;
+  }
+  
+  .navbar-nav > .active > a, 
+  .navbar-nav > li > a:hover,
+  .nav .open > a,
+  .nav .open > a:hover, 
+  .nav .open > a:focus {
+    background-color: darken($tcu-purple, 5%);
+  }
+  
+  .navbar-toggle .icon-bar {
+    background-color: $white;
+  }
+}
+
+.well-white {
+  @extend .well;
+  @extend .well-sm;
+  background-color: transparent;
+  h1, h2, h3, h4, h5, h6 { margin-top: 0; }
+}
+
+.facets-table {
+  @extend .table;
+  @extend .table-condensed;
+  margin-bottom: 0;
+  .count { text-align: right; }
+}
+
+.dore-sidebar-section {
+  //@extend .well;
+  //@extend .well-sm;
+  //background-color: transparent;
+  //h4 { margin-top: 0; }
+}
+
