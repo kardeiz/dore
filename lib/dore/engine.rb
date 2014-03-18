@@ -16,11 +16,11 @@ module Dore
       org.dspace.core.ConfigurationManager.load_config config.dspace_cfg
     end
     
-    initializer 'start.dspace.kernel' do
-      kernel_impl = org.dspace.servicemanager.DSpaceKernelInit.get_kernel(nil)
-      dspace_dir = org.dspace.core.ConfigurationManager.get_property('dspace.dir')
-      kernel_impl.start(dspace_dir) unless kernel_impl.is_running
-    end
+#    initializer 'start.dspace.kernel' do
+#      kernel_impl = org.dspace.servicemanager.DSpaceKernelInit.get_kernel(nil)
+#      dspace_dir = org.dspace.core.ConfigurationManager.get_property('dspace.dir')
+#      kernel_impl.start(dspace_dir) unless kernel_impl.is_running
+#    end
     
     initializer 'add.custom.java.to.classpath' do
       $CLASSPATH << self.class.root.join('lib/dore/java').to_s

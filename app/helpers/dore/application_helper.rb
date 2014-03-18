@@ -77,6 +77,10 @@ module Dore
       end.join.html_safe
     end
   
+    def recent_submissions(recent_submissions)
+      recent_submissions.map do
+    end
+  
   
   end
 end
